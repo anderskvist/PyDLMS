@@ -12,7 +12,7 @@ class dlmsError(Exception):
 
 class dlms(object):
 
-	def __init__(self, serial_port = "/dev/cuaU3"):
+	def __init__(self, serial_port = "/dev/ttyUSB0"):
 		self.ser = serial.Serial(
 			port = serial_port,
 			baudrate = 300,
